@@ -39,3 +39,9 @@ fortreign-sysadmin-lab/
 ├── security/
 ├── troubleshooting/
 └── screenshots/
+
+## 📸 Screenshots (Coming Soon)
+- Proxmox dashboard
+- Active Directory Users & Computers
+- DHCP scope configuration
+- VLAN configuration on switch
