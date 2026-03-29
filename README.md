@@ -3,7 +3,7 @@
 ## Overview
 The Fort Reign SysAdmin Lab is a simulated federal contractor IT environment designed to replicate real-world system administration, identity management, and infrastructure operations.
 
-Modeled after a garrison-style operations center, Fort Reign was built using a formal implementation blueprint that defines its Active Directory architecture, departmental structure, file share design, and baseline user activity simulation. This repository documents the foundational infrastructure layer that supports future SOC, cloud, help desk, and compliance workflows.
+Modeled after a garrison-style operations center, Fort Reign was built using a self-developed implementation blueprint that defines its Active Directory architecture, departmental structure, file share design, and baseline user activity simulation. This repository documents the foundational infrastructure layer that supports future SOC, cloud, help desk, and compliance workflows.
 
 ---
 
