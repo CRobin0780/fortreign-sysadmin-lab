@@ -1,44 +1,78 @@
 # Fort Reign – SysAdmin Lab
 
 ## Overview
-The Fort Reign SysAdmin Lab is a simulated enterprise IT environment designed to replicate real-world system administration, identity management, and infrastructure operations.
+The Fort Reign SysAdmin Lab is a simulated federal contractor IT environment designed to replicate real-world system administration, identity management, and infrastructure operations.
 
-This lab models a federal contractor-style garrison operations environment and serves as the foundational layer for SOC monitoring, cloud integration, help desk operations, and compliance workflows.
+Modeled after a garrison-style operations center, Fort Reign was built using a formal implementation blueprint that defines its Active Directory architecture, departmental structure, file share design, and baseline user activity simulation. This repository documents the foundational infrastructure layer that supports future SOC, cloud, help desk, and compliance workflows.
+
+---
+
+## 🏗️ Implementation Blueprint
+
+Fort Reign was developed from a structured implementation plan to simulate a realistic enterprise environment.
+
+The blueprint defines:
+
+- A 6-department organizational structure:
+  - Command  
+  - IT Operations  
+  - Security Operations  
+  - Human Resources  
+  - Finance  
+  - Logistics  
+
+- 25–30 simulated employee accounts aligned to departments  
+- Department-based Organizational Units (OUs)  
+- Role-based security groups for access control  
+- Departmental file shares with realistic business data  
+- Automated user activity simulation for baseline telemetry  
+
+This approach enables realistic administration, auditing, and future SIEM detection scenarios.
 
 ---
 
 ## 🏢 Enterprise Simulation
 
-Fort Reign is structured to reflect a realistic organizational environment with:
+Fort Reign reflects a real-world enterprise network with structured identity and access management.
 
-- 27 user accounts across 6 departments:
-  - Finance
-  - IT Operations
-  - Security Operations
-  - Human Resources
-  - Logistics
-  - Command
+- Users are organized by department and role  
+- Access is controlled through security groups and least-privilege principles  
+- File shares are segmented by department with controlled permissions  
+- The environment supports realistic operational and security workflows  
 
-This structure enables realistic identity management, access control, and auditing scenarios similar to those found in enterprise and government environments.
+This design mirrors enterprise and government IT environments.
 
 ---
 
 ## 🗂️ Active Directory Architecture
 
-A full Active Directory environment was designed and deployed to simulate enterprise identity and access management.
+The Active Directory environment was designed to support enterprise identity and access management.
 
 ### Organizational Units (OUs)
-- Department-based OUs for logical separation
-- Administrative OUs for servers, users, and privileged accounts
+- Top-level Fort Reign OU  
+- Department-based OUs:
+  - Command  
+  - IT Operations  
+  - Security Operations  
+  - HR  
+  - Finance  
+  - Logistics  
+- Additional OUs for:
+  - Computers  
+  - Groups  
+  - Service Accounts  
 
 ### Security Groups
-- Role-based access control aligned to departments
-- Group membership used to manage permissions and delegation
+- Department-based access groups  
+- Administrative privilege groups  
+- Help desk and support groups  
+- Remote access groups  
 
-### File Shares & Permissions
-- Department-specific shared folders
-- NTFS permissions aligned with least-privilege principles
-- Access restricted based on job function and role
+### Identity Design Goals
+- Enable role-based access control (RBAC)  
+- Support scalable user and group management  
+- Provide audit-friendly structure for monitoring  
+- Simulate real-world enterprise identity systems  
 
 ---
 
@@ -47,10 +81,10 @@ A full Active Directory environment was designed and deployed to simulate enterp
 - Deploy and configure a Proxmox VE virtualization environment  
 - Build a Windows Server 2022 domain controller  
 - Configure Active Directory, DNS, and DHCP services  
-- Implement VLAN-based segmentation (Management, Lab, Attack, IoT)  
+- Implement VLAN-based network segmentation  
 - Establish role-based access control using AD security groups  
 - Automate administrative tasks using PowerShell  
-- Create repeatable documentation for deployment and troubleshooting  
+- Create repeatable deployment and troubleshooting documentation  
 
 ---
 
@@ -89,14 +123,14 @@ A full Active Directory environment was designed and deployed to simulate enterp
 
 ## 🎯 Why This Project Matters
 
-This project demonstrates the practical skills required for:
+This project demonstrates practical, job-relevant experience in:
 
-- System Administration roles  
-- IT Support and infrastructure operations  
+- System Administration  
+- IT Infrastructure Operations  
 - Identity and Access Management (IAM)  
-- SOC and security monitoring environments  
+- Security-focused enterprise environments  
 
-It reflects real-world enterprise design patterns, including centralized identity, segmented networks, and controlled access to resources.
+Fort Reign reflects real-world enterprise design patterns, including centralized identity management, segmented networks, controlled access to resources, and structured user environments suitable for monitoring and compliance.
 
 ---
 
@@ -112,9 +146,3 @@ fortreign-sysadmin-lab/
 ├── security/
 ├── troubleshooting/
 └── screenshots/
-
-## 📸 Screenshots (Coming Soon)
-- Proxmox dashboard
-- Active Directory Users & Computers
-- DHCP scope configuration
-- VLAN configuration on switch
