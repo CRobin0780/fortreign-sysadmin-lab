@@ -4,6 +4,7 @@
 This document defines the structured implementation plan used to design and build the Fort Reign enterprise lab environment.
 
 The blueprint outlines the architecture, identity design, organizational structure, access control model, and phased deployment approach used to simulate a realistic federal contractor IT environment.
+
 ## Implementation Phases
 
 ### Phase 1 – Core Infrastructure
@@ -35,3 +36,12 @@ The blueprint outlines the architecture, identity design, organizational structu
 - SIEM (Wazuh) integration
 - Detection rule development
 - Incident response workflows
+
+## Design Principles
+
+- Least Privilege: Users only have access required for their role
+- Role-Based Access Control (RBAC): Permissions managed through security groups
+- Segmentation: Network isolation across VLANs
+- Scalability: Structured OU and group design for growth
+- Auditability: Environment supports logging and monitoring use cases
+- Realism: Simulated departments, users, and business workflows
