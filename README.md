@@ -1,15 +1,17 @@
 # Fort Reign – SysAdmin Lab
 
 ## Overview
-The Fort Reign SysAdmin Lab is a simulated federal contractor IT environment designed to replicate real-world system administration, identity management, and infrastructure operations.
+The Fort Reign SysAdmin Lab is a simulated federal contractor IT environment designed to replicate real-world system administration, identity management, and enterprise infrastructure operations.
 
-Modeled after a garrison-style operations center, Fort Reign was built using a self-developed implementation blueprint that defines its Active Directory architecture, departmental structure, file share design, and baseline user activity simulation. This repository documents the foundational infrastructure layer that supports future SOC, cloud, help desk, and compliance workflows.
+Modeled after a garrison-style operations center, Fort Reign was built using a structured implementation blueprint that defines its Active Directory architecture, departmental organization, file share design, and baseline user activity simulation.
+
+This repository documents the foundational infrastructure layer supporting downstream SOC, cloud, help desk, and compliance-focused projects.
 
 ---
 
 ## 🏗️ Implementation Blueprint
 
-Fort Reign was developed from a structured implementation plan to simulate a realistic enterprise environment.
+Fort Reign was developed using a structured implementation plan to ensure consistency, scalability, and realism.
 
 The blueprint defines:
 
@@ -27,7 +29,7 @@ The blueprint defines:
 - Departmental file shares with realistic business data  
 - Automated user activity simulation for baseline telemetry  
 
-This approach enables realistic administration, auditing, and future SIEM detection scenarios.
+This structured approach enables realistic system administration, auditing, and future SIEM-driven detection scenarios.
 
 ---
 
@@ -36,7 +38,7 @@ This approach enables realistic administration, auditing, and future SIEM detect
 Fort Reign reflects a real-world enterprise network with structured identity and access management.
 
 - Users are organized by department and role  
-- Access is controlled through security groups and least-privilege principles  
+- Access is controlled using security groups and least-privilege principles  
 - File shares are segmented by department with controlled permissions  
 - The environment supports realistic operational and security workflows  
 
@@ -46,7 +48,7 @@ This design mirrors enterprise and government IT environments.
 
 ## 🗂️ Active Directory Architecture
 
-The Active Directory environment was designed to support enterprise identity and access management.
+The Active Directory environment was designed to support scalable and audit-friendly identity management.
 
 ### Organizational Units (OUs)
 - Top-level Fort Reign OU  
@@ -54,10 +56,10 @@ The Active Directory environment was designed to support enterprise identity and
   - Command  
   - IT Operations  
   - Security Operations  
-  - HR  
+  - Human Resources  
   - Finance  
   - Logistics  
-- Additional OUs for:
+- Supporting OUs:
   - Computers  
   - Groups  
   - Service Accounts  
@@ -71,28 +73,28 @@ The Active Directory environment was designed to support enterprise identity and
 ### Identity Design Goals
 - Enable role-based access control (RBAC)  
 - Support scalable user and group management  
-- Provide audit-friendly structure for monitoring  
-- Simulate real-world enterprise identity systems  
+- Provide audit-ready structure for monitoring  
+- Simulate enterprise identity systems  
 
 ---
 
 ## 🎯 Objectives
 
 - Deploy and configure a Proxmox VE virtualization environment  
-- Build a Windows Server 2022 domain controller  
-- Configure Active Directory, DNS, and DHCP services  
-- Implement VLAN-based network segmentation  
-- Establish role-based access control using AD security groups  
-- Automate administrative tasks using PowerShell  
+- Build and configure a Windows Server 2022 domain controller  
+- Implement Active Directory, DNS, and DHCP services  
+- Design VLAN-based network segmentation  
+- Enforce role-based access control using AD security groups  
+- Automate administrative workflows using PowerShell  
 - Create repeatable deployment and troubleshooting documentation  
 
 ---
 
 ## 🏗️ Environment Summary
 
-- Hypervisor Platform: Proxmox VE  
-- Core Server: Windows Server 2022  
-- Domain: `lab.local`  
+- **Hypervisor Platform:** Proxmox VE  
+- **Core Server:** Windows Server 2022  
+- **Domain:** `lab.local`  
 
 ### Core Services
 - Active Directory Domain Services (AD DS)  
@@ -106,18 +108,21 @@ The Active Directory environment was designed to support enterprise identity and
 - Attack VLAN  
 - IoT VLAN  
 
-## Automation
+---
 
-This repository includes PowerShell automation used to accelerate and standardize the Fort Reign build process.
+## ⚙️ Automation
 
-### Included Automation
-- Active Directory environment build and teardown
-- Department-aligned user provisioning
-- File and user activity simulation
-- Domain controller auditing and validation
+This lab incorporates PowerShell automation to standardize deployment, enforce consistency, and simulate real-world enterprise activity.
+
+### Capabilities
+- Full Active Directory environment build and teardown  
+- Department-aligned user provisioning  
+- Automated group membership and access assignment  
+- Simulated user and file activity for behavioral realism  
+- Domain controller auditing and validation  
 
 ### Purpose
-These scripts support repeatable deployment, reduced manual configuration, and realistic enterprise telemetry generation for future security monitoring.
+These scripts enable repeatable infrastructure deployment, reduce manual configuration, and generate realistic enterprise telemetry to support SOC monitoring and detection engineering workflows.
 
 ### Automation Structure
 ```text
@@ -128,7 +133,7 @@ automation/
 └── utils/
 ---
 
-## 🧠 Skills Demonstrated
+### 🧠 Skills Demonstrated
 
 - Windows Server administration  
 - Active Directory design and management  
@@ -156,7 +161,6 @@ Fort Reign reflects real-world enterprise design patterns, including centralized
 
 ## 📁 Repository Structure
 
-```text
 fortreign-sysadmin-lab/
 ├── README.md
 ├── architecture/
