@@ -118,6 +118,14 @@ This repository includes PowerShell automation used to accelerate and standardiz
 
 ### Purpose
 These scripts support repeatable deployment, reduced manual configuration, and realistic enterprise telemetry generation for future security monitoring.
+
+### Automation Structure
+```text
+automation/
+├── ad/
+├── simulation/
+├── audit/
+└── utils/
 ---
 
 ## 🧠 Skills Demonstrated
