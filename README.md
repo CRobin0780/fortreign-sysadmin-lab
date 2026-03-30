@@ -156,7 +156,6 @@ This project demonstrates practical, job-relevant experience in:
 - Security-focused enterprise environments  
 
 Fort Reign reflects real-world enterprise design patterns, including centralized identity management, segmented networks, controlled access to resources, and structured user environments suitable for monitoring and compliance.
-
 ---
 
 ## 📁 Repository Structure
