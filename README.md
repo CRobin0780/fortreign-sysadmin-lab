@@ -106,6 +106,18 @@ The Active Directory environment was designed to support enterprise identity and
 - Attack VLAN  
 - IoT VLAN  
 
+## Automation
+
+This repository includes PowerShell automation used to accelerate and standardize the Fort Reign build process.
+
+### Included Automation
+- Active Directory environment build and teardown
+- Department-aligned user provisioning
+- File and user activity simulation
+- Domain controller auditing and validation
+
+### Purpose
+These scripts support repeatable deployment, reduced manual configuration, and realistic enterprise telemetry generation for future security monitoring.
 ---
 
 ## 🧠 Skills Demonstrated
